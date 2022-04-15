@@ -1,0 +1,28 @@
+.bg-color{
+    background-color: lime
+
+}
+.navbar-brand{
+    padding-right: 60%;
+}
+li{
+    font-weight: bolder;
+    font-size: 1.15rem;
+    color: black;
+}
+.hosting{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+li:hover{
+    border-bottom: 5px solid white;
+    text-decoration-color: white;
+}
+.hosting:hover{
+    background-color: white;
+    color: red;
+    border: none ;
+    
+}
