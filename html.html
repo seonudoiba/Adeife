@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: blue;
+      }
+      .signup {
+        background-color: orange;
+        width: 300px;
+        height: 200px;
+        margin: 1rem;
+      }
+      .login {
+        background-color: green;
+        width: 300px;
+        height: 200px;
+        margin: 1rem;
+      }
+      .loginactive {
+        display: none;
+      }
+      .signupactive {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Log in</button>
+      <div>
+        <div id="reg" class="signup">
+            <h1>Register Here</h1>
+            Name: <input type="text" id=""/><br/>
+            Class: <input type="text" id=""/><br/>
+            password: <input type="password" id=""/><br/>
+            Wrtite i: <input type="text" id=""/>
+        </div>
+        <div id="log" class="login loginactive">
+            <h1>Log in here</h1>
+            <br/>
+            Name: <input type="text" id=""/><br/>
+            password: <input type="password" id=""/>
+        </div>
+      </div>
+    </div>
+    <script>
+      const reg = document.getElementById("reg");
+      const log = document.getElementById("log");
+
+      function register() {
+        log.classList.add("loginactive");
+        reg.classList.remove("signupactive");
+      }
+      function login() {
+        reg.classList.add("signupactive");
+        log.classList.remove("loginactive");
+      }
+    </script>
+  </body>
+</html>
